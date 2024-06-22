@@ -15,3 +15,9 @@
     width: 60rem;
 
 }
+
+.gridSquares > * {
+
+    background-color: thistle;
+    
+}
