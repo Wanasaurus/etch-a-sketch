@@ -1,7 +1,7 @@
 .smallSquare {
    
-    background-color: white;
-    border: 1px solid black;
+    background-color: skyblue;
+    /* border: 1px solid black; */
     height: 2rem;
     width: 2rem;
     
@@ -10,14 +10,16 @@
 .gridSquares {
 
     display: flex;
-    border: 3px solid pink;
-    height: 60rem;
-    width: 60rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px solid pink;
+    height: 32rem;
+    width: 32rem;
 
 }
 
-.gridSquares > * {
+/* .gridSquares > * {
 
-    background-color: thistle;
+    background-color: white;
     
-}
+} */
