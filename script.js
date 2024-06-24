@@ -8,14 +8,22 @@ square.classList.add("smallSquare");
 
 function createGrid (number) {
     
-    for (let i = 1; i <= number; i++) {
-        square = document.createElement("div");
-        document.querySelector(".gridSquares").appendChild(square);
-        square.classList.add("smallSquare"); 
-}
+    for (let outer = 1; outer <= number; outer++) {
+
+        for (let inner = 1; inner <= number; inner++) {
+
+            square = document.createElement("div");
+            document.querySelector(".gridSquares").appendChild(square);
+            square.classList.add("smallSquare"); 
+        
+        }
+        
+    }
+
 }   
 
-loop(6);
+
+createGrid(6);
 
 //Make a square
 // function grid(side) {
