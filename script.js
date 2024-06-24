@@ -23,7 +23,7 @@ function createGrid (number) {
 }   
 
 
-createGrid(6);
+createGrid(16);
 
 //Make a square
 // function grid(side) {
