@@ -6,7 +6,8 @@ square.classList.add("smallSquare");
 
 //Create more squares
 
-function loop(number) {
+function createGrid (number) {
+    
     for (let i = 1; i <= number; i++) {
         square = document.createElement("div");
         document.querySelector(".gridSquares").appendChild(square);
