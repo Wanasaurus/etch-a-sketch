@@ -1,10 +1,4 @@
-
-// One square
-let square = document.createElement("div");
-document.querySelector(".gridSquares").appendChild(square);
-square.classList.add("smallSquare"); 
-
-//Create more squares
+//Create multiple squares
 
 function createGrid (number) {
     
@@ -12,7 +6,9 @@ function createGrid (number) {
 
         for (let inner = 1; inner <= number; inner++) {
 
-            square = document.createElement("div");
+            // Create one square
+
+            let square = document.createElement("div");
             document.querySelector(".gridSquares").appendChild(square);
             square.classList.add("smallSquare"); 
         
