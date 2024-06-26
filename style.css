@@ -1,7 +1,13 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
 .smallSquare {
    
     background-color: skyblue;
-    /* border: 0.5px solid black; */
+    border: 0.5px solid black;
     height: 2rem;
     width: 2rem;
     
@@ -12,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     height: 32rem;
     width: 32rem;
 
