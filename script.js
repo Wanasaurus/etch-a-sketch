@@ -20,16 +20,3 @@ function createGrid (number) {
 
 
 createGrid(16);
-
-//Make a square
-// function grid(side) {
-//     return side * side;
-// }
-
-// //Loop numbers
-// function loop(number) {
-//     for (let i = 1; i <= number; i++) {
-//         console.log(i + " " + "square");
-// }
-// } 
-
