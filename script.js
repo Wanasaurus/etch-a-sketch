@@ -20,3 +20,13 @@ function createGrid (number) {
 
 
 createGrid(16);
+
+//Change squares per side
+
+let squares = document.querySelector("#squares");
+squares.addEventListener("click", () => {
+
+    alert("Ray day");
+
+}
+);
