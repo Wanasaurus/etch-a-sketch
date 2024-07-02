@@ -24,9 +24,10 @@ createGrid(16);
 //Change squares per side
 
 let squares = document.querySelector("#squares");
-squares.addEventListener("click", () => {
+squares.addEventListener("click", changeGrid);
 
-    alert("Ray day");
+function changeGrid (number) {
+
+    alert(`You picked ${number}`);
 
 }
-);
