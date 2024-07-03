@@ -28,6 +28,10 @@ squares.addEventListener("click", changeGrid);
 
 function changeGrid (number) {
 
-    alert(`You picked ${number}`);
-
+    if (number > 100) {
+        alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
+    } else {
+        alert(`You picked ${number}`);
+    }
+    
 }
