@@ -24,10 +24,12 @@ createGrid(16);
 //Change squares per side
 
 let squares = document.querySelector("#squares");
-squares.addEventListener("click", changeGrid);
+squares.addEventListener("submit", changeGrid);
 
-function changeGrid (number) {
+function changeGrid (event) {
 
+    let number = event.target.value;
+    
     if (number > 100) {
         alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
     } else {
