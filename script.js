@@ -27,13 +27,16 @@ let squares = document.querySelector("#squares");
 squares.addEventListener("submit", changeGrid);
 
 function changeGrid (event) {
-
-    let number = event.target.value;
     
-    if (number > 100) {
-        alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
-    } else {
-        alert(`You picked ${number}`);
-    }
+    event.preventDefault();
+    let number = event.target.value;
+    console.log(number);
+    
+    
+    // if (number > 100) {
+    //     alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
+    // } else {
+    //     alert(`You picked ${number}`);
+    // }
     
 }
