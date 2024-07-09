@@ -30,12 +30,12 @@ function changeGrid (event) {
     
     event.preventDefault();
 
-    let number = document.querySelector("#squaresPerSide").value;
+    let sqPerSide = document.querySelector("#squaresPerSide").value;
     
-    if (number > 100) {
+    if (sqPerSide > 100) {
         alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
     } else {
-        alert(`You picked ${number}`);
+        alert(`You picked ${sqPerSide}`);
     }
     
 }
