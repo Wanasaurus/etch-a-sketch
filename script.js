@@ -37,5 +37,10 @@ function changeGrid (event) {
     } else {
         alert(`You picked ${sqPerSide}`);
     }
+
+    let remove = document.querySelector(".gridSquares");
+    while (remove.firstChild) {
+        remove.removeChild(remove.firstChild);
+    }
     
 }
