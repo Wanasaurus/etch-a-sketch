@@ -34,9 +34,7 @@ function changeGrid (event) {
     
     if (sqPerSide > 100) {
         alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
-    } else {
-        alert(`You picked ${sqPerSide}`);
-    }
+    } 
 
     let remove = document.querySelector(".gridSquares");
     while (remove.firstChild) {
