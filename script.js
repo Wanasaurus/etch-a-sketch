@@ -36,9 +36,9 @@ function changeGrid (event) {
         alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
     } 
 
-    let remove = document.querySelector(".gridSquares");
-    while (remove.firstChild) {
-        remove.removeChild(remove.firstChild);
+    let clear = document.querySelector(".gridSquares");
+    while (clear.firstChild) {
+        clear.removeChild(clear.firstChild);
     }
     
 }
