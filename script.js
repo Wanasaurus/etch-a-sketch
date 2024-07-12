@@ -42,6 +42,7 @@ function changeGrid (event) {
         while (clear.firstChild) {
         clear.removeChild(clear.firstChild);
         }
+        createGrid(sqPerSide);
 
     }
     
