@@ -36,14 +36,30 @@ function changeGrid (event) {
 
         alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
         
-    } else {
+    }
 
-        let clear = document.querySelector(".gridSquares");
-        while (clear.firstChild) {
+    let clear = document.querySelector(".gridSquares");
+        
+    while (clear.firstChild) {
+
         clear.removeChild(clear.firstChild);
-        }
-        createGrid(sqPerSide);
 
     }
+        
+    for (let outer = 1; outer <= sqPerSide; outer++) {
+
+        for (let inner = 1; inner <= sqPerSide; inner++) {
+
+            // Create one square
+
+            let newSquare = document.createElement("div");
+            document.querySelector(".gridSquares").appendChild(newSquare);
+            newSquare.classList.add("newSmallSquare"); 
+        
+        }
+        
+    }
+
+    
     
 }
