@@ -17,6 +17,15 @@ h1 {
 
 }
 
+li,
+label,
+input {
+
+    font-family: Helvetica, sans-serif;
+    color: black;
+
+}
+
 .smallSquare {
    
     background-color: white;
