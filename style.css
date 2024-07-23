@@ -41,8 +41,7 @@ input {
     background-color: pink;
     border: 0.5px solid black;
     height: 2rem;
-    width: 2rem;
-    flex-grow: 1;
+    flex: 1 1 2rem;
     
 }
 
