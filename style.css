@@ -36,9 +36,9 @@ input {
     
 }
 
-.newSmallSquare {
+.newRowSquare {
    
-    background-color: pink;
+    background-color: thistle;
     border: 0.5px solid black;
     height: 2rem;
     flex: 1 1 2rem;
