@@ -1,4 +1,4 @@
-//Create multiple squares
+// Create the default 16 squares
 
 function createGrid (number) {
     
@@ -21,7 +21,7 @@ function createGrid (number) {
 
 createGrid(16);
 
-//Change squares per side
+// Change squares per side without resizing the grid
 
 let squares = document.querySelector("#squares");
 squares.addEventListener("submit", changeGrid);
@@ -29,6 +29,8 @@ squares.addEventListener("submit", changeGrid);
 function changeGrid (event) {
     
     event.preventDefault();
+
+    // Grid cannot hold more than 100 x 100 squares
 
     let sqPerSide = document.querySelector("#squaresPerSide").value;
     
@@ -38,6 +40,8 @@ function changeGrid (event) {
         
     }
 
+    // Remove the default grid 
+
     let clear = document.querySelector(".gridSquares");
         
     while (clear.firstChild) {
@@ -45,6 +49,8 @@ function changeGrid (event) {
         clear.removeChild(clear.firstChild);
 
     }
+
+    // Generate new squares within the grid without resizing grid
         
     for (let outer = 1; outer <= sqPerSide; outer++) {
 
