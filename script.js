@@ -54,9 +54,9 @@ function changeGrid (event) {
         
     for (let row = 1; row <= sqPerSide; row++) {
 
-            let newSquare = document.createElement("div");
-            document.querySelector(".gridSquares").appendChild(newSquare);
-            newSquare.classList.add("newSmallSquare"); 
+            let rowSquare = document.createElement("div");
+            document.querySelector(".gridSquares").appendChild(rowSquare);
+            rowSquare.classList.add("newRowSquare"); 
         
         }
         
