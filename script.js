@@ -52,11 +52,7 @@ function changeGrid (event) {
 
     // Generate new squares within the grid without resizing grid
         
-    for (let outer = 1; outer <= sqPerSide; outer++) {
-
-        for (let inner = 1; inner <= sqPerSide; inner++) {
-
-            // Create one square
+    for (let row = 1; row <= sqPerSide; row++) {
 
             let newSquare = document.createElement("div");
             document.querySelector(".gridSquares").appendChild(newSquare);
@@ -65,7 +61,3 @@ function changeGrid (event) {
         }
         
     }
-
-    
-    
-}
