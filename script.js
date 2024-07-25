@@ -51,12 +51,23 @@ function changeGrid (event) {
     }
 
     // Generate new squares within the grid without resizing grid
+
+    const containerSize = 32;
+
+    const numRows = sqPerSide;
+
+    const sqSize = containerSize / numRows;
         
     for (let row = 1; row <= sqPerSide; row++) {
 
-            let rowSquare = document.createElement("div");
-            document.querySelector(".gridSquares").appendChild(rowSquare);
-            rowSquare.classList.add("newRowSquare"); 
+        for (let column = 1; column <= sqPerSide; column++) {
+           
+            let columnSquare = document.createElement("div");
+            document.querySelector(".gridSquares").appendChild(columnSquare);
+            columnSquare.classList.add("newRowSquare"); 
+            columnSquare.style.width = `${sqSize}rem`;
+            columnSquare.style.height = `${sqSize}rem`;
+        }
         
         }
         
