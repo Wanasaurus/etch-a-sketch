@@ -40,8 +40,8 @@ input {
    
     background-color: thistle;
     border: 0.5px solid black;
-    height: 2rem;
-    flex: 1 1 2rem;
+    /* height: 2rem;
+    flex: 1 1 2rem; */
     
 }
 
