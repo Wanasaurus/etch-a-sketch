@@ -38,10 +38,8 @@ input {
 
 .newRowSquare {
    
-    background-color: thistle;
+    background-color: white;
     border: 0.5px solid black;
-    /* height: 2rem;
-    flex: 1 1 2rem; */
     
 }
 
