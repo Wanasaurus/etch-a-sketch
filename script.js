@@ -64,7 +64,7 @@ function changeGrid (event) {
            
             let columnSquare = document.createElement("div");
             document.querySelector(".gridSquares").appendChild(columnSquare);
-            columnSquare.classList.add("newRowSquare"); 
+            columnSquare.classList.add("newSquare"); 
             columnSquare.style.width = `${sqSize}rem`;
             columnSquare.style.height = `${sqSize}rem`;
         }
