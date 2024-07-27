@@ -75,11 +75,11 @@ function changeGrid (event) {
 
     // Clean Grid
 
-    let clean = document.querySelector("#cleanGrid");
-    clean.addEventListener("click", () => {
+    let startAnew = document.querySelector("#cleanGrid");
+    startAnew.addEventListener("click", () => {
 
         console.log("Ray");
-        
+
         }
     
     );
