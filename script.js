@@ -78,7 +78,13 @@ function changeGrid (event) {
     let startAnew = document.querySelector("#cleanGrid");
     startAnew.addEventListener("click", () => {
 
-        console.log("Ray");
+        let clear = document.querySelector(".gridSquares");
+        
+        while (clear.firstChild) {
+
+        clear.removeChild(clear.firstChild);
+
+        }
 
         }
     
