@@ -53,6 +53,15 @@ input {
 
 }
 
+#createNewSquares,
+#cleanGrid 
+
+{
+
+    border-radius: 30px;
+
+}
+
 /* .gridSquares > * {
 
     background-color: white;
