@@ -65,6 +65,12 @@ input {
 
 }
 
+#squaresPerSide {
+
+    width: 2.5rem;
+
+}
+
 /* .gridSquares > * {
 
     background-color: white;
