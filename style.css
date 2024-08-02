@@ -74,7 +74,8 @@ input {
 
 #cleanGrid {
 
-    background-color: white;    
+    background-color: white;
+    margin-left: auto;    
 
 }
 
@@ -84,6 +85,12 @@ input {
     width: 3rem;
     border: 2px solid #D3D3D3;
     border-radius: 5px;
+
+}
+
+.alterGrid {
+
+    display: flex;
 
 }
 
