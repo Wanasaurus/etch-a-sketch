@@ -94,11 +94,11 @@ function changeGrid (event) {
 
     let colourPicker = document.querySelector("#pickColour");
     colourPicker.addEventListener("change", colour);
-    
-    
-    function colour (event) {
+
+    let colour = function (event) {
 
         console.log(event.target.value);
+        
     }
 
     // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
