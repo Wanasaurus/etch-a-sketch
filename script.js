@@ -95,7 +95,7 @@ function changeGrid (event) {
     let colourPicker = document.querySelector("#pickColour");
     colourPicker.addEventListener("change", colour);
 
-    let colour = function (event) {
+    function colour (event) {
 
         console.log(event.target.value);
         
