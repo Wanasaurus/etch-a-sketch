@@ -104,7 +104,10 @@ function colour (event) {
         
 }
 
+//Add colour to selected squares
 
+let colouredSquare = document.querySelectorAll(".smallSquare");
+console.log(colouredSquare);
 
 
 
