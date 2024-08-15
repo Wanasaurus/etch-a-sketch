@@ -99,15 +99,15 @@ function colour (event) {
 
     //Select a square
 
-    let selectSquare = document.querySelector(".gridSquares").children;
-    selectSquare[1].style.backgroundColor = event.target.value;
+    let squareColour = document.querySelector(".gridSquares").children;
+    squareColour[1].style.backgroundColor = event.target.value;
         
 }
 
 //Add colour to selected squares
 
-let colouredSquare = document.querySelectorAll(".smallSquare");
-console.log(colouredSquare);
+let selectSquare = document.querySelectorAll(".smallSquare");
+console.log(selectSquare);
 
 
 
