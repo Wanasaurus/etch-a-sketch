@@ -92,12 +92,13 @@ function changeGrid (event) {
 
 //Pick a colour
 
+let colourSquare = document.querySelectorAll(".smallSquare");
+
 let colourPicker = document.querySelector("#pickColour");
 colourPicker.addEventListener("change", colour);
 
 function colour (event) {
 
-    let colourSquare = document.querySelectorAll(".smallSquare");
     colourSquare[0].style.backgroundColor = event.target.value;
         
 }
