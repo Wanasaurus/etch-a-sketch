@@ -97,17 +97,15 @@ colourPicker.addEventListener("change", colour);
 
 function colour (event) {
 
-    //Select a square
-
-    let squareColour = document.querySelector(".gridSquares").children;
-    squareColour[1].style.backgroundColor = event.target.value;
+    let colourSquare = document.querySelectorAll(".smallSquare");
+    colourSquare[0].style.backgroundColor = event.target.value;
         
 }
 
 //Add colour to selected squares
 
-let selectSquare = document.querySelectorAll(".smallSquare");
-console.log(selectSquare);
+// let selectSquare = document.querySelectorAll(".smallSquare");
+// console.log(selectSquare);
 
 
 
