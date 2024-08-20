@@ -99,7 +99,7 @@ colourPicker.addEventListener("change", colour);
 
 function colour (event) {
 
-    colourSquare[0].style.backgroundColor = event.target.value;
+    console.log(event.target.value);
         
 }
 
