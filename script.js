@@ -95,15 +95,23 @@ function changeGrid (event) {
 let colourSquare = document.querySelectorAll(".smallSquare");
 
 let colourPicker = document.querySelector("#pickColour");
-colourPicker.addEventListener("change", colour);
-
-function colour (event) {
+colourPicker.addEventListener("change", (event) => {
 
     console.log(event.target.value);
+    // applyColour (smallSquare, event.target.value);
         
 }
+)
 
 //Add colour to selected squares
+
+let mousedown = false;
+
+function applyColour (smallSquare, colour) {
+
+    
+
+}
 
 // let selectSquare = document.querySelectorAll(".smallSquare");
 // console.log(selectSquare);
