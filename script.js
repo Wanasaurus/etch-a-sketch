@@ -98,28 +98,12 @@ let colourPicker = document.querySelector("#pickColour");
 colourPicker.addEventListener("change", (event) => {
 
     console.log(event.target.value);
-    // applyColour (smallSquare, event.target.value);
-        
+    
 }
 )
 
-//Add colour to selected squares
-
-let mousedown = false;
-
-function applyColour (smallSquare, colour) {
-
-    
-
-}
-
-// let selectSquare = document.querySelectorAll(".smallSquare");
-// console.log(selectSquare);
 
 
+// How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 
-
-
-    // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
-
-    // Mouse events + how to draw on a canvas with a mouse: https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event#examples 
+// Mouse events + how to draw on a canvas with a mouse: https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event#examples 
