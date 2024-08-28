@@ -92,8 +92,6 @@ function changeGrid (event) {
 
 //Pick a colour
 
-let colourSquare = document.querySelectorAll(".smallSquare");
-
 let colourPicker = document.querySelector("#pickColour");
 colourPicker.addEventListener("change", (event) => {
 
@@ -102,6 +100,19 @@ colourPicker.addEventListener("change", (event) => {
 }
 )
 
+//Change colour of squares
+
+
+function colour () {
+
+    document.querySelectorAll(".smallSquare").forEach((element) => {
+
+        element.style.backgroundColor = "rebeccapurple";
+    });
+
+}
+
+colour();
 
 
 // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
