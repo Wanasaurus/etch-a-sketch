@@ -93,21 +93,17 @@ function changeGrid (event) {
 //Pick a colour
 
 let colourPicker = document.querySelector("#pickColour");
-colourPicker.addEventListener("change", (event) => {
+colourPicker.addEventListener("change", colour);
 
-    console.log(event.target.value);
-    
-}
-)
 
 //Change colour of squares
 
 
-function colour () {
+function colour (event) {
 
     document.querySelectorAll(".smallSquare").forEach((element) => {
 
-        element.style.backgroundColor = "rebeccapurple";
+        element.style.backgroundColor = event.target.value;
     });
 
 }
