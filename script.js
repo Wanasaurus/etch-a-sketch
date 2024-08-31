@@ -90,25 +90,36 @@ function changeGrid (event) {
     
     );
 
-//Pick a colour
+// //Pick a colour
 
-let colourPicker = document.querySelector("#pickColour");
-colourPicker.addEventListener("change", colour);
-
-
-//Change colour of squares
+// let colourPicker = document.querySelector("#pickColour");
+// colourPicker.addEventListener("change", colour);
 
 
-function colour (event) {
+// //Change colour of squares
 
-    document.querySelectorAll(".smallSquare").forEach((element) => {
 
-        element.style.backgroundColor = event.target.value;
-    });
+// function colour (event) {
+
+//     document.querySelectorAll(".smallSquare").forEach((element) => {
+
+//         element.style.backgroundColor = event.target.value;
+//     });
+
+// }
+
+// colour();
+
+let pickSquares = document.querySelectorAll(".smallSquare");
+pickSquares.forEach(changeColours);
+
+function changeColours(element) { 
+    
+    element.addEventListener("mousedown",() => {
+        element.style.backgroundColor = "rebeccapurple";
+    })
 
 }
-
-colour();
 
 
 // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
