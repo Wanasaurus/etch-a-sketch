@@ -90,33 +90,46 @@ function changeGrid (event) {
     
     );
 
-// //Pick a colour
+//Pick a colour
 
-// let colourPicker = document.querySelector("#pickColour");
-// colourPicker.addEventListener("change", colour);
-
-
-// //Change colour of squares
+let colourPicker = document.querySelector("#pickColour");
+colourPicker.addEventListener("change", colour);
 
 
-// function colour (event) {
+//Change colour of squares
 
-//     document.querySelectorAll(".smallSquare").forEach((element) => {
 
-//         element.style.backgroundColor = event.target.value;
-//     });
+function colour (event) {
 
-// }
+    console.log(event.target.value);
+    
+};
+
+
 
 // colour();
+
+let mouseDown = false;
 
 let pickSquares = document.querySelectorAll(".smallSquare");
 pickSquares.forEach(changeColours);
 
 function changeColours(element) { 
     
-    element.addEventListener("mousedown",() => {
+    element.addEventListener("mousedown",(event) => {
+        event.preventDefault();
+        mouseDown = true;
         element.style.backgroundColor = "rebeccapurple";
+    })
+
+    element.addEventListener("mouseover", () => {
+        if (mouseDown) {
+            element.style.backgroundColor = "rebeccapurple";
+        }
+    })
+
+    element.addEventListener("mouseup", () => {
+        mouseDown = false;
     })
 
 }
