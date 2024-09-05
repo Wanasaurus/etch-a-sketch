@@ -96,18 +96,13 @@ let colourPicker = document.querySelector("#pickColour");
 colourPicker.addEventListener("change", colour);
 
 
-//Change colour of squares
-
-
 function colour (event) {
 
     console.log(event.target.value);
     
 };
 
-
-
-// colour();
+//Select and remove colours using mouse
 
 let mouseDown = false;
 
@@ -130,6 +125,11 @@ function changeColours(element) {
 
     element.addEventListener("mouseup", () => {
         mouseDown = false;
+    })
+
+    element.addEventListener("dblclick", () => {
+        element.style.backgroundColor = "";
+
     })
 
 }
