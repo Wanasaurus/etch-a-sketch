@@ -90,19 +90,9 @@ function changeGrid (event) {
     
     );
 
-//Pick a colour
+//Select and remove colours using mouse
 
 let colourPicker = document.querySelector("#pickColour");
-colourPicker.addEventListener("change", colour);
-
-
-function colour (event) {
-
-    console.log(event.target.value);
-    
-};
-
-//Select and remove colours using mouse
 
 let mouseDown = false;
 
@@ -114,12 +104,12 @@ function changeColours(element) {
     element.addEventListener("mousedown",(event) => {
         event.preventDefault();
         mouseDown = true;
-        element.style.backgroundColor = "rebeccapurple";
+        element.style.backgroundColor = colourPicker.value;
     })
 
     element.addEventListener("mouseover", () => {
         if (mouseDown) {
-            element.style.backgroundColor = "rebeccapurple";
+            element.style.backgroundColor = colourPicker.value;
         }
     })
 
