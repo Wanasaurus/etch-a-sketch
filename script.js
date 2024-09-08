@@ -124,6 +124,19 @@ function changeColours(element) {
 
 }
 
+// Remove borders
+
+let checkbox = document.querySelector("#checkBorders");
+
+checkbox.addEventListener("change", () => {
+
+    if(checkbox.checked) {
+        console.log("ray");
+    } else {
+        console.log("nay");
+    }
+
+} )
 
 // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 
