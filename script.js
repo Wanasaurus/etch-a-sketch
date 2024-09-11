@@ -124,19 +124,33 @@ function changeColours(element) {
 
 }
 
-// Remove borders
+// Toggle borders
 
-let checkbox = document.querySelector("#checkBorders");
+pickSquares.forEach(borderless);
 
-checkbox.addEventListener("change", () => {
+function borderless (element) {
+
+    let checkbox = document.querySelector("#checkBorders");
+
+    checkbox.addEventListener("change", () => {
 
     if(checkbox.checked) {
-        console.log("ray");
+
+        element.style.border = "thin solid pink";
+
     } else {
-        console.log("nay");
+
+        element.style.border = "thin solid teal";
+
     }
 
-} )
+        }
+    )
+}
+
+
+
+
 
 // How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 
