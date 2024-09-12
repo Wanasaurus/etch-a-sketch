@@ -33,7 +33,6 @@ input {
 .smallSquare {
    
     background-color: white;
-    border: 0.5px solid black;
     height: 2rem;
     width: 2rem;
     
@@ -42,7 +41,6 @@ input {
 .newSquare {
    
     background-color: white;
-    border: 0.5px solid black;
     
 }
 
