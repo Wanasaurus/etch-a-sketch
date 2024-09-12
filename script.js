@@ -136,11 +136,11 @@ function borderless (element) {
 
     if(checkbox.checked) {
 
-        element.style.border = "thin solid pink";
+        element.style.border = "thin solid #D3D3D3";
 
     } else {
 
-        element.style.border = "thin solid teal";
+        element.style.border = "";
 
     }
 
