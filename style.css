@@ -8,13 +8,16 @@ body {
 
     display: flex;
     justify-content: center;
+    background-color: black;
 
 }
+
 
 h1 {
 
     margin: 0.25rem;
     text-align: center;
+    color: white;
 
 }
 
@@ -23,7 +26,7 @@ label,
 input {
 
     font-family: Helvetica, sans-serif;
-    color: black;
+    color: white;
 
 }
 
@@ -58,7 +61,7 @@ input {
 
 {
 
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 30px;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -83,7 +86,7 @@ input {
 #squaresPerSide {
 
     width: 3rem;
-    border: 2px solid #D3D3D3;
+    border: 2px solid white;
     border-radius: 5px;
 
 }
