@@ -99,9 +99,6 @@ let mouseDown = false;
 let pickSquares = document.querySelectorAll(".smallSquare");
 pickSquares.forEach(changeColours);
 
-let pickNewSquares = document.querySelectorAll(".newSquare");
-pickNewSquares.forEach(changeColours);
-
 function changeColours(element) { 
     
     element.addEventListener("mousedown",(event) => {
@@ -130,8 +127,6 @@ function changeColours(element) {
 // Toggle borders
 
 pickSquares.forEach(borderless);
-
-pickNewSquares.forEach(borderless);
 
 function borderless (element) {
 
