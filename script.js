@@ -64,9 +64,13 @@ function changeGrid (event) {
            
             let columnSquare = document.createElement("div");
             document.querySelector(".gridSquares").appendChild(columnSquare);
-            columnSquare.classList.add("newSquare"); 
+            columnSquare.style.backgroundColor = "white"; 
             columnSquare.style.width = `${sqSize}rem`;
             columnSquare.style.height = `${sqSize}rem`;
+            columnSquare.classList.add("smallSquare");
+            
+            
+            columnSquare.addEventListener("click", () => {console.log("Ray");});
         }
         
         }
