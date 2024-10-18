@@ -60,7 +60,7 @@ function changeGrid (event) {
         
     }
 
-    // Clean Grid
+// Clean Grid
 
 let startAnew = document.querySelector("#cleanGrid");
 startAnew.addEventListener("click", () => {
@@ -77,14 +77,22 @@ startAnew.addEventListener("click", () => {
     
     );
 
+//Event delegation for borders and colours    
+
+document.addEventListener("click", (element) => {
+
+    let allNewSquares = document.querySelectorAll(".gridSquares > *")
+    allNewSquares.forEach(changeColours); 
+    allNewSquares.forEach(borderless);
+
+}
+)
+
 //Select and remove colours using mouse
 
 let colourPicker = document.querySelector("#pickColour");
 
 let mouseDown = false;
-
-let pickSquares = document.querySelectorAll(".smallSquare");
-pickSquares.forEach(changeColours);
 
 function changeColours(element) { 
     
@@ -112,8 +120,6 @@ function changeColours(element) {
 }
 
 // Toggle borders
-
-pickSquares.forEach(borderless);
 
 function borderless (element) {
 
