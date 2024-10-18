@@ -1,23 +1,27 @@
 // Create the default 16 squares
 
-function createGrid (number) {
-    
-    for (let outer = 1; outer <= number; outer++) {
+const containerSize = 32;
 
-        for (let inner = 1; inner <= number; inner++) {
+function createGrid (sqPerSide) {
 
-            // Create one square
+    const numRows = sqPerSide; 
+   
+    const sqSize = containerSize / numRows;   
+  
+    for (let row = 1; row <= sqPerSide; row++) {
 
-            let square = document.createElement("div");
-            document.querySelector(".gridSquares").appendChild(square);
-            square.classList.add("smallSquare"); 
-        
+        for (let column = 1; column <= sqPerSide; column++) {
+           
+            let columnSquare = document.createElement("div");
+            document.querySelector(".gridSquares").appendChild(columnSquare);
+            columnSquare.style.backgroundColor = "white"; 
+            columnSquare.style.width = `${sqSize}rem`;
+            columnSquare.style.height = `${sqSize}rem`;
+            columnSquare.style.border = "1.5px solid black";
+            
         }
-        
     }
-
-}   
-
+}
 
 createGrid(16);
 
@@ -32,9 +36,9 @@ function changeGrid (event) {
 
     // Grid cannot hold more than 100 x 100 squares
 
-    let sqPerSide = document.querySelector("#squaresPerSide").value;
+    let number = document.querySelector("#squaresPerSide").value;
     
-    if (sqPerSide > 100) {
+    if (number > 100) {
 
         return alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
         
@@ -52,39 +56,18 @@ function changeGrid (event) {
 
     // Generate new squares within the grid without resizing grid
 
-    const containerSize = 32;
-
-    const numRows = sqPerSide;
-
-    const sqSize = containerSize / numRows;
-        
-    for (let row = 1; row <= sqPerSide; row++) {
-
-        for (let column = 1; column <= sqPerSide; column++) {
-           
-            let columnSquare = document.createElement("div");
-            document.querySelector(".gridSquares").appendChild(columnSquare);
-            columnSquare.style.backgroundColor = "white"; 
-            columnSquare.style.width = `${sqSize}rem`;
-            columnSquare.style.height = `${sqSize}rem`;
-            columnSquare.classList.add("smallSquare");
-            
-            
-            columnSquare.addEventListener("click", () => {console.log("Ray");});
-        }
-        
-        }
+    createGrid(number);
         
     }
 
     // Clean Grid
 
-    let startAnew = document.querySelector("#cleanGrid");
-    startAnew.addEventListener("click", () => {
+let startAnew = document.querySelector("#cleanGrid");
+startAnew.addEventListener("click", () => {
 
-        let clear = document.querySelector(".gridSquares");
+    let clear = document.querySelector(".gridSquares");
         
-        while (clear.firstChild) {
+    while (clear.firstChild) {
 
         clear.removeChild(clear.firstChild);
 
