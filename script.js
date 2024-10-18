@@ -17,7 +17,6 @@ function createGrid (sqPerSide) {
             columnSquare.style.backgroundColor = "white"; 
             columnSquare.style.width = `${sqSize}rem`;
             columnSquare.style.height = `${sqSize}rem`;
-            columnSquare.style.border = "1.5px solid black";
             
         }
     }
