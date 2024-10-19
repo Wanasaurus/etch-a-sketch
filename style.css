@@ -42,9 +42,8 @@ input {
 }
 
 #selectButton,
-#cleanGrid 
-
-{
+#cleanGrid,
+#rainbowMode {
 
     border: 2px solid white;
     border-radius: 30px;
