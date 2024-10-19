@@ -30,20 +30,6 @@ input {
 
 }
 
-/* .smallSquare {
-   
-    background-color: white;
-    height: 2rem;
-    width: 2rem;
-    
-} */
-
-/* .newSquare {
-   
-    background-color: white;
-    
-} */
-
 .gridSquares {
 
     display: flex;
