@@ -139,11 +139,3 @@ function borderless (element) {
         }
     )
 }
-
-
-
-
-
-// How to pick different colour: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
-
-// Mouse events + how to draw on a canvas with a mouse: https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event#examples 
