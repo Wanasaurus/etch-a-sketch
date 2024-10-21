@@ -76,7 +76,8 @@ input {
 
 }
 
-.alterGrid {
+.alterGrid,
+.extraFeatures {
 
     display: flex;
 
