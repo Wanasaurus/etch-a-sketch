@@ -143,4 +143,10 @@ function borderless (element) {
 // Rainbow colours
 
 let rainbowButton = document.querySelector("#rainbowMode");
-rainbowButton.addEventListener("click", () => {console.log("Ray");})
+rainbowButton.addEventListener("click", colourful);
+
+function colourful () {
+
+    console.log("Ray day");
+
+}
