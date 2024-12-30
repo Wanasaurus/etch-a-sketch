@@ -87,10 +87,3 @@ input {
     display: flex;
 
 }
-
-#rainbowMode {
-
-    background: linear-gradient(90deg, red,yellow,green,blue, purple, pink);
-    color: white;
-
-}
