@@ -139,14 +139,3 @@ function borderless (element) {
         }
     )
 }
-
-// Rainbow colours
-
-let rainbowButton = document.querySelector("#rainbowMode");
-rainbowButton.addEventListener("click", colourful);
-
-function colourful () {
-
-    console.log("Ray day");
-
-}
