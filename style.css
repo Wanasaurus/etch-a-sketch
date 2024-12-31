@@ -52,6 +52,14 @@ input {
 
 }
 
+#selectButton:active,
+#cleanGrid:active {
+ 
+    background-color: white;
+    color: black;
+
+}
+
 #selectButton,
 #cleanGrid {
  
