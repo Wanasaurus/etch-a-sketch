@@ -52,6 +52,13 @@ input {
 
 }
 
+#selectButton:hover,
+#cleanGrid:hover {
+ 
+    border: none;
+
+}
+
 #selectButton:focus,
 #cleanGrid:focus {
  
