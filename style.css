@@ -52,11 +52,20 @@ input {
 
 }
 
+#selectButton:focus,
+#cleanGrid:focus {
+ 
+    background-color: white;
+    color: black;
+
+}
+
 #selectButton:active,
 #cleanGrid:active {
  
     background-color: white;
     color: black;
+    transform: translateY(4px);
 
 }
 
