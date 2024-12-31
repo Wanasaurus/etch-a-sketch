@@ -37,9 +37,9 @@ function changeGrid (event) {
 
     let number = document.querySelector("#squaresPerSide").value;
     
-    if (number > 100) {
+    if (number >= 50) {
 
-        return alert("Sorry, too many squares might cause technical issues. Use 100 or less instead.");
+        return alert("Sorry, too many squares might cause technical issues. Use 50 or less instead.");
         
     }
 
